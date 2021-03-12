@@ -1,0 +1,46 @@
+body {
+    background-image   : url(/assets/img/home_bg.png);
+    background-size    : cover;
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+header,
+footer {
+    width   : 100%;
+    position: sticky;
+    z-index : 2147483647;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+.ui-header {
+    width              : 280px;
+    background-image   : url(/assets/img/button_bg.png);
+    background-size    : 280px 44px;
+    background-repeat  : no-repeat;
+    background-position: center;
+}
+
+.slick-list {
+    padding: 0 20% 0 0;
+}
+
+.slick-dots li {
+    margin: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+}
+
+.slick-dots li.slick-active button:before,
+.slick-dots li button:before {
+    color: #fff;
+}

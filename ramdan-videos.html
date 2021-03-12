@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibadat Zain | Ramadan Videos</title>
+    <link rel="icon" href="favicon.ico" type="image/ico" sizes="16x16">
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/plyr.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+        :root {
+            --plyr-color-main: red;
+        }
+
+        .card-header {
+            border-bottom-left-radius: .35em;
+            border-bottom-right-radius: .35em;
+        }
+
+        .plyr--video {
+            border-top-left-radius: .85em;
+            border-top-right-radius: .85em;
+            background-color: transparent;
+        }
+
+        .plyr--video.plyr--stopped .plyr__controls {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="img-fluid w-100" src="assets/img/header_bg.png" alt="header">
+    </header>
+    <main class="container">
+        <div class="row">
+            <div class="col-12 text-center mb-3">
+                <div class="ui-header d-inline-block fs-5 p-2">
+                    Special Ramadan Videos
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="card bg-transparent border-0">
+                    <video class="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                        <source src="assets/video/laylatul-qadr-540-p_HPAtA1ul.mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-header bg-light">Laylatul qadr</div>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="card bg-transparent border-0">
+                    <video class="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                        <source src="assets/video/laylatul-qadr-540-p_HPAtA1ul.mp4" type="video/mp4"/>
+                    </video>
+                    <div class="card-header bg-light">Nafs</div>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="card bg-transparent border-0">
+                    <video class="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                        <source src="assets/video/laylatul-qadr-540-p_HPAtA1ul.mp4" type="video/mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-header bg-light">Ramadan</div>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="card bg-transparent border-0">
+                    <video class="player" playsinline controls data-poster="https://cdn.plyr.io/static/demo/View_From_A_Blue_Moon_Trailer-HD.jpg">
+                        <source src="assets/video/laylatul-qadr-540-p_HPAtA1ul.mp4" type="video/mp4" type="video/mp4" />
+                    </video>
+                    <div class="card-header bg-light">Ramadan</div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <img class="img-fluid w-100" src="assets/img/footer_bg.png" alt="footer">
+    </footer>
+    <script type="text/javascript" src="js/plyr.polyfilled.js"></script>
+    <script>
+        (function () {
+            Array.from(document.querySelectorAll('.player')).map(p => new Plyr(p));
+        })();
+    </script>
+</body>
+
+</html>
